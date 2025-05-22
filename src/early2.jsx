@@ -506,13 +506,13 @@ useEffect(() => {
             boxShadow: "0 2px 10px rgba(0,0,0,0.3)",
             maxHeight: "90vh", overflowY: "auto"
           }}>
-            <p>Please answer the following questions based on your thoughts and feelings about what you wrote (1 = Not at all ~ 7 = Very much).</p>
+            <p>아래 문항에 동의하는 정도를 응답해주시기 바랍니다(1 =  전혀 그렇지 않다 ~ 7 = 매우 그렇다).</p>
 
             {[
-              "I feel I made it on my own.",
-              "I feel I deserve full credit for doing the project.",
-              'I thought to myself "I did it!"',
-              "I felt a sense of ownership for the outcome."
+              "나만의 것을 만들어낸 것 같은 느낌이 들었다.",
+              "내가 이 과제를 수행한 것에 대해 모든 공로를 받을 자격이 있다고 느꼈다.",
+              '스스로 "내가 해냈어!"라고 생각했다.',
+              "최종 결과물에 대한 소유감을 느꼈다."
             ].map((question, qIndex) => (
               <div key={qIndex} style={{ marginTop: "30px" }}>
                 <p style={{ marginBottom: "10px", fontWeight: "bold" }}>{question}</p>
@@ -521,7 +521,7 @@ useEffect(() => {
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "6px", alignItems: "center" }}>
                   {[1, 2, 3, 4, 5, 6, 7].map((val, idx) => (
                     <div key={val} style={{ flex: 1, textAlign: "center", fontSize: "12px", fontWeight: "bold", lineHeight: "1.4" }}>
-                      <div>{idx === 0 ? "Not at all" : idx === 6 ? "Very much" : "\u00A0"}</div>
+                      <div>{idx === 0 ? "전혀 그렇지 않다" : idx === 6 ? "매우 그렇다" : "\u00A0"}</div>
                       <div>{val}</div>
                     </div>
                   ))}
@@ -565,7 +565,7 @@ useEffect(() => {
                 fontWeight: "bold"
               }}
           >
-              Continue
+              글쓰기 계속하기
             </button>
           </div>
         </div>
