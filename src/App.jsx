@@ -1,4 +1,4 @@
-import WritingTest from "./early2";
+import WritingTest from "./late6";
 
 function App() {
   return <WritingTest/>;
